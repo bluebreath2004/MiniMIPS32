@@ -1,0 +1,21 @@
+bfc00000:   3c 09 11 11         lui   $t1,   0x1111
+bfc00004:   35 29 11 11         ori   $t1,   $t1,   0x1111
+bfc00008:   3c 0a 22 22         lui   $t2,   0x2222
+bfc0000c:   35 4a 22 22         ori   $t2,   $t2,   0x2222
+bfc00010:   3c 08 bf c0         lui   $t0,   0xbfc0
+bfc00014:   25 08 00 28         addiu $t0, $t0, 0x0028
+bfc00018:   01 00 f8 09         jalr   $t0
+bfc00028:   3c 0b 33 33         lui   $t3,   0x3333
+bfc0002c:   35 6b 33 33         ori   $t3,   $t3,   0x3333
+bfc00030:   3c 0c 44 44         lui   $t4,   0x4444
+bfc00034:   35 8c 44 44         ori   $t4,   $t4,   0x4444
+bfc00038:   3c 08 bf c0         lui   $t0,   0xbfc0
+bfc0003c:   25 08 00 50         addiu $t0, $t0, 0x0050
+bfc00040:   01 00 f8 09         jalr   $t0
+bfc00050:   3c 0d 55 55         lui   $t5,   0x5555
+bfc00054:   35 ad 55 55         ori   $t5,   $t5,   0x5555
+bfc00058:   3c 0e 66 66         lui   $t6,   0x6666
+bfc0005c:   35 ce 66 66         ori   $t6,   $t6,   0x6666
+bfc00060:   3c 08 bf c0         lui   $t0,   0xbfc0
+bfc00064:   25 08 00 78         addiu $t0, $t0, 0x0078
+bfc00068:   01 00 f8 09         jalr   $t0

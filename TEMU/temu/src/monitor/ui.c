@@ -76,6 +76,8 @@ static int cmd_info(char*args)
 				printf("%s\t 0x%08x\n", regfile[i], reg_w(i));
 
 			}
+			printf("%s\t 0x%08x\n", "$HI", cpu.hi);
+			printf("%s\t 0x%08x\n", "$LO", cpu.lo);
 		}
 	else if(strcmp(arg, "w") == 0)
 		{

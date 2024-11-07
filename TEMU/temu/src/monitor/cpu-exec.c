@@ -20,7 +20,8 @@ char asm_buf[128];
 void print_bin_instr(uint32_t pc) {
 	int i;
 	if(temu_state != END) {
-		int l = sprintf(asm_buf, "%8x:   ", cpu.pc - 4);
+		uint32_t pc_virtual = pc | 0xb0000000;  //print vaddr(bfc0 0000) instead of paddr(1fc0 0000)
+		int l = sprintf(asm_buf, "%8x:   ", pc_virtual);
 		for(i = 3; i >= 0; i --) {
 			l += sprintf(asm_buf + l, "%02x ", instr_fetch(pc + i, 1));
 		}

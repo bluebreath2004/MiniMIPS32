@@ -6,7 +6,7 @@ extern uint32_t instr;
 extern char assembly[80];
 
 static void decode_j_type(uint32_t instr) {
-    op_src1->instr_index = ( instr & INDEX_MASK ) & 0x1FFFFFFF;
+    op_src1->instr_index = ( instr & INDEX_MASK ) & 0x1FFFFFFF;    op_src1->instr_index = ( instr & INDEX_MASK ) ;
 }
 
 make_helper(j) {
