@@ -19,3 +19,5 @@ bfc0005c:   35 ce 66 66         ori   $t6,   $t6,   0x6666
 bfc00060:   3c 08 bf c0         lui   $t0,   0xbfc0
 bfc00064:   25 08 00 78         addiu $t0, $t0, 0x0078
 bfc00068:   01 00 f8 09         jalr   $t0
+bfc00068:   01 00 f8 09         jalr   $t0
+
