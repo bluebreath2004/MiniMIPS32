@@ -50,7 +50,7 @@ $(TESTCASE_BUILD_DIR)$(USER_PROGRAM).o: $(TESTCASE_SRC_DIR)$(USER_PROGRAM).S
 
 $(TESTCASE_BUILD_DIR)$(USER_PROGRAM): default.ld $(OBJECTS)
 	$(LD) -T default.ld $(CFLAGS) $(OBJECTS) -o $@
-	$(OBJDUMP) -alD $@ > $@.asm
+	$(OBJDUMP)  -alD $@ > $@.asm
 
 inst.bin: $(TESTCASE_BUILD_DIR)$(USER_PROGRAM)
 	$(OBJCOPY) -O binary -j .text $<  $@
